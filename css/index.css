@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+.navbar{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+section > i, section > h2{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+  background-color: grey;
+  margin: 0px;
+  padding: 0px;
+}
+.hamburger{
+  background-color: grey;
+  text-align: right;
+  color: white;
+}
+.logo > img {
+  width: 50px;
+}
+.logo{
+  text-align: center;
+  align-items: center;
+}
+.product{
+  text-align: center;
+  align-items: center;
+}
+section{
+  border: 1px solid lightgray;
+  border-radius: 2%;
+  margin: 3%;
+}
+p{
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: left;
+  margin: 2%;
+}
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: white;
+  list-style: none;
+  justify-content: space-around;
+}
+@media (min-width:991px){
+  main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 10px;
+  }
+  .navbar{
+    background-color: grey;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+  }
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+    color: white;
+    width: 100%;
+  }
+  .hamburger{
+    display: none;
+  }
+  .menu > li {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  section{
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 2%;
+    margin: 1%;
+    width: 30%;
+    flex-direction: column;
+  }
+  footer{
+    border-top: 1px solid lightgrey;
+  }
+}
+@media (max-width:599px){
+  .curry{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+}
+@media(min-width: 600px) and (max-width:990px){
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: 10px;
+  }
+  .menu{
+    display: none;
+  }
+  footer{
+    border-top: 1px solid lightgrey;
+  }
+}
